@@ -1,0 +1,9 @@
+.box {
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    transition: all .5s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}

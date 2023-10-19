@@ -1,11 +1,17 @@
+@font-face {
+  font-family: TitilliumWeb;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/titilliumweb-regualar.woff") format("woff"), url("../fonts/titilliumweb-regualar.woff2") format("woff2");
+}
 body {
-  font-family: "Titillium Web", helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
 }
 
 h2 {
-  font-family: "Titillium Web", helvetica, arial;
+  font-family: "TitilliumWeb", helvetica, arial;
   font-size: 35px;
-  color: #fff;
+  color: #24658b;
   margin-bottom: 10px;
 }
 
@@ -15,16 +21,15 @@ p {
 }
 
 #main-header {
-  background-color: #fff;
+  background-color: #000000;
   margin-bottom: 20px;
+  text-align: left;
 }
 #main-header #logo {
   display: block;
   height: 50px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 300px;
+  margin-top: 0px;
+  max-width: 100px;
 }
 #main-header #main-nav {
   margin-top: 40px;
@@ -34,7 +39,7 @@ p {
   list-style: none;
   justify-content: center;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 20 20 20 20;
 }
 #main-header #main-nav ul li {
   margin-right: 20px;
@@ -43,7 +48,7 @@ p {
   margin-right: 0;
 }
 #main-header #main-nav a {
-  color: #fff;
+  color: #24658b;
   text-decoration: none;
 }
 
@@ -55,4 +60,21 @@ p {
     margin-left: 0;
     margin-right: 0;
   }
+}
+footer {
+  background-color: #ffcd74;
+  color: #fff;
+  height: 200px;
+}
+
+footer p {
+  line-height: 40px;
+}
+
+#about-us {
+  margin-bottom: 40px;
+}
+
+#founders section {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
