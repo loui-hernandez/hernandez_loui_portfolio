@@ -67,3 +67,5 @@ videoControls.addEventListener('mouseenter',showControls);
 videoControls.addEventListener('mouseleave', hideControls);
 player.addEventListener('moseenter', showControls);
 player.addEventListener('mouseleave', hideControls);
+
+//burger nav

@@ -18,10 +18,6 @@ img, embed, object, video, picture {
  
  /* ---Mini CSS reset--- */
  
- body, p, h1, h2, h3, h4, h5 {
-    margin: 0px; 
-    padding: 0px;
- }
  
  /* ---Utility Classes--- */
  
@@ -29,15 +25,6 @@ img, embed, object, video, picture {
     display: none;
  }
  
- .box {
-    background-color: powderblue;
-    color: rgb(27, 27, 27);
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom:10px;
-  }
  
  /* ---Mobile Library Grid Styles--- */
  
