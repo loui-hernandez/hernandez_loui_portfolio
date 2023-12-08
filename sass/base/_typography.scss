@@ -1,17 +1,44 @@
-@use '../abstracts/variables' as v;
+@use "../abstracts/variables" as v;
 
-body {
-    font-family: v.$body-font-family;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  line-height: 1.15;
+  color: v.$whiteText;
 }
 
-h2{
-    font-family: v.$heading-font-family;
-    font-size: 35px;
-    color: v.$primary-color;
-    margin-bottom: 10px;
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0px 1rem 0px;
 }
 
-p{
-    line-height: 20px;
-    margin-bottom: 10px;
+h2 {
+  font-size: 1.875rem;
+  margin: 1rem 0px 1rem 0px;
 }
+
+h3 {
+  font-size: 1.5rem;
+  margin: .8rem 0px .8rem 0px;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin: .6rem 0px .6rem 0px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+  color: v.$grayish;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+

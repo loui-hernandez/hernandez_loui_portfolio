@@ -10,54 +10,47 @@
     <title>Loui Hernandez Portfolio</title>
 </head>
 <body>
-    <header id="main-header" class="grid-con">
-
-        <div class="col-span-full" id="logo">
-            <a href="index.html"><img src="images/loui-logo-white.svg" alt="Loui Logo"></a>
-        </div>
-
-        <nav class="col-span-full" id="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+<header>
+  <section class="main-nav">
+    <img src="images/loui-logo-white.svg" alt="Loui Logo" class="logo-nav">
+      <input type="checkbox" id="navToggle" class="navToggle">
+        <label for="navToggle" class="navToggleLabel">
+          <span></span>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
         </nav>
-    </header>
-    <main>
-        <div class="grid-con" id="hero-banner">
-          <h2 class="col-span-full">So... Im a Designer?</h2>
-          <section class="col-span-full m-col-span-6">
-            <img src="images/img-vid-will-be-here-horizontal-100.jpg" />
-            <p>Some Text for this</p>
-          </section>
-          <section class="col-span-4 m-col-span-6">
-            <p>Some Text for this</p>
-          </section>
-        </div>
-        <div class="grid-con" id="project-2">
-          <section class="col-span-4 box">
-            <img src="images/img-vid-will-be-here-horizontal-100.jpg" />
-            <h2>This Will Be a Project</h2>
-            <p>Some Text for this</p>
-          </section>
-          <section class="col-span-4 box">
-            <img src="images/img-vid-will-be-here-horizontal-100.jpg" />
-            <h2>This Will Be a Project</h2>
-            <p>Some Text for this</p>
-          </section>
-          <section class="col-span-4 box">
-            <img src="images/img-vid-will-be-here-horizontal-100.jpg" />
-            <h2>This Will Be a Project</h2>
-            <p>Some Text for this</p>
-          </section>
-        </div>
-      </main>
-      
-    <footer class="grid-con">
-        <p class="col-span-full">Loui Hernandez Portfolio</p>
-      </footer>
+  </section>
+</header>
+  <div class="bkg-container">
+  <section class="grid-con" id="profile">
+    <div class="col-span-full m-col-start-1 m-col-end-7 " >
+      <iframe class="my_name" src='https://my.spline.design/untitled-c52e9a46574a6075a08d4759287eab29/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+    <div class="col-span-full m-col-start-7 m-col-end-12" id="my-desc">
+      <h1 >I'm a Designer?</h1>
+      <p>Hey there! Thanks for checking out my Portfolio Page!</p>
+      <p>If you're here, it's probably because you want to know a little more about me than what's on my resume.</p>
 
+      <div class="soc-med">
+        <a href="https://www.linkedin.com/in/leh-0819"><img src="images/linkedin.svg" alt="LinkedIn Icon" class="soc-med-icon"></a>
+        <a href="https://github.com/loui-hernandez"><img src="images/github.svg" alt="Github Icon" class="soc-med-icon"></a>
+        <a href="https://www.behance.net/LOUIERICKH5b94"><img src="images/behance.svg" alt="Behance Icon" class="soc-med-icon"></a>
+      </div>
+      
+      <button class="downloadCV">
+        <span class="circle" aria-hidden="true">
+        <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">Download CV</span>
+      </button>
+
+    </section>
+  </div>
 </body>
 </html>

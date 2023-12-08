@@ -1,11 +1,22 @@
 @use 'fonts';
 
+
 $primary-color: #24658b;
 $secondary-color: #8fcddb;
-$accent-color: #ffcd74;
-$body-text-color: #333;
+$accent-color: gold;
 $heading-font-family: 'TitilliumWeb', helvetica, arial;
-$body-font-family: helvetica,arial, sans-serif;
-$base-font-size: 18px;
-$base-font-weight: 400;
+$body-font-family: 'Titillium Web', sans-serif;
 
+//Text Colors
+$blackText: #000000;
+$darkGray: hsl(0, 0%, 20%);
+$grayish: hsl(233, 8%, 62%);
+$lightGrayish: hsl(220, 16%, 96%);
+$veryLightGray: hsl(0, 0%, 98%);
+$whiteText: hsl(0, 0%, 100%);
+
+// Font Sizes
+$font-sm: 0.875rem; // 14px
+$font-med: 1.125rem; // 18px
+$font-lg: 1.25rem;
+$font-xlg: 3.25rem;
