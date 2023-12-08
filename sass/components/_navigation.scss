@@ -1,16 +1,15 @@
 @use "../abstracts/variables" as v;
 
 .logo-nav {
-    max-width: 80px;
+    max-width: 70px;
    }
   
   .main-nav {
-    height: 100px;
+    height: 70px;
     width: 100%;
     position: sticky;
     top: 0;
     background-color: #000000;
-    border-bottom: 3px solid #e0e5eb;
     box-shadow: 0px 1px 8px #272727;
     padding: 0 1.5rem;
     z-index: 99;
@@ -75,7 +74,7 @@
   nav {
     position: absolute;
     z-index: -1;
-    top: 3.0rem;
+    top: 4.0rem;
     left: -110%;
     width: 100%;
     transition: 0.22s ease-in-out;
@@ -108,7 +107,7 @@
   
   nav ul li a:hover {
     color: v.$accent-color;
-    background: #e0e5eb;
+    background: v.$whiteText;
   }
   
   nav ul li:last-of-type::before {
