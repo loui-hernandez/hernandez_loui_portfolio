@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as v;
+
+.link {
+    font-family: v.$heading-font-family;
+    font-size: v.$font-lg;
+    font-weight: 600;
+    color: v.$whiteText;
+    text-decoration: none;
+    position: relative;
+
+    span, i {
+        position: relative;
+    } 
+
+    i {
+        margin-left: .5em;
+    }
+
+    .ball {
+        width: 2em;
+        height: 2em;
+        border-radius: 2em;
+        background-color: v.$accent-color;
+        position: absolute;
+        top: 50%;
+        left: -0.5em;
+        transform: translateY(-50%);
+    }
+}

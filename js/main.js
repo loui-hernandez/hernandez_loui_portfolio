@@ -1,5 +1,5 @@
 
-
+//video Player
 const playerCon = document.querySelector("#player-container");
 const player = document.querySelector("video");
 const videoControls = document.querySelector("#video-controls");
@@ -65,3 +65,26 @@ videoControls.addEventListener('mouseleave', hideControls);
 player.addEventListener('mouseenter', showControls);
 player.addEventListener('mouseleave', hideControls);
 
+//image 3d hover effect gsap
+// document.addEventListener("mousemove", function(event) {
+//     var width = window.innerWidth,
+//     height = window.innerHeight,
+//     positionX = (event.clientX/width) - 0.6,
+//     positionY = (event.clientY/height) - 0.6;
+//     gsap.to(".image_con img", {
+
+//         rotationY: positionX * 50,
+//         rotationX: -positionY * 50,
+//         ease: "none"
+
+//     });
+    
+// })
+
+// // bouncing ball button
+// let link = document.querySelector(".link");
+// let ball = document.querySelector(".ball");
+// let hoverTL = gsap.timeline();
+// hoverTL.to(ball, {width: "calc(100% + 1.3em}", ease: "Elastic.easeOut(0.25)",
+// duration: 2})
+// hoverTL.to(ball, {width: "2em", left: "calc(100% +1.5em}", ease: "Elastic.easeOut(0.25)"})

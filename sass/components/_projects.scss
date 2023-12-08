@@ -15,7 +15,6 @@
   
   .portfolio h1 {
     color: v.$accent-color;
-    font-size: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,19 +29,19 @@
   }
   
   .projects-temp {
-    list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1rem;
   }
   
   .projects-temp li {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto minmax(140px, 1fr) auto;
+    grid-template-rows: auto minmax(100px, 1fr) auto;
     padding: 1rem;
-    background-color: rgba(255,255,255,.9);
-    border-radius: 6px;
+    background-color: v.$whiteText;
+    border-radius: 3px;
     border: solid 1px #dedede;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
@@ -53,12 +52,12 @@
   }
   
   .projects-temp h3 {
-    background-color: rgba(255,255,255,.5);
+    background-color: v.$darkGray;
     color: v.$whiteText;
     padding: .5rem;
     margin-bottom: 1rem;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(51,51,51,.7);
+    text-shadow: 1px 1px 2px v.$darkGray;
     align-self: end;
   }
      
