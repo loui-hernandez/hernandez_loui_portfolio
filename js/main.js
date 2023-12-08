@@ -1,4 +1,4 @@
-// variables
+
 
 const playerCon = document.querySelector("#player-container");
 const player = document.querySelector("video");
@@ -9,9 +9,7 @@ const stopButton = document.querySelector("#stop-button");
 const volumeSlider = document.querySelector("#change-vol");
 const fullScreen = document.querySelector("#full-screen");
 
-// functions
 
-//if JS is loaded, super. Remove the default controls
 player.controls = false;
 videoControls.classList.remove('hidden');
 
@@ -56,7 +54,6 @@ function showControls() {
     videoControls.classList.remove('hide');
 }
 
-// Event Listeners
 
 playButton.addEventListener("click", playVideo);
 pauseButton.addEventListener("click", pauseVideo);
@@ -65,7 +62,6 @@ volumeSlider.addEventListener("change", changeVolume);
 fullScreen.addEventListener("click", toggleFullScreen);
 videoControls.addEventListener('mouseenter',showControls);
 videoControls.addEventListener('mouseleave', hideControls);
-player.addEventListener('moseenter', showControls);
+player.addEventListener('mouseenter', showControls);
 player.addEventListener('mouseleave', hideControls);
 
-//burger nav
