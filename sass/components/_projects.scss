@@ -40,9 +40,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto minmax(100px, 1fr) auto;
     padding: 1rem;
-    background-color: v.$whiteText;
-    border-radius: 3px;
-    border: solid 1px #dedede;
+    background-color: rgba(v.$blackText, 0.8);
+    border-radius: 8px;
+    border: solid 1px v.$grayish;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   
@@ -60,78 +60,9 @@
     text-shadow: 1px 1px 2px v.$darkGray;
     align-self: end;
   }
-     
-   button.btn-projects {
-    width: 100%;
-    height: auto;
-    margin: .5rem 0 .5rem 0;
-   }
-   
-   button.btn-projects .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: v.$grayish;
-    border-radius: 1.625rem;
-   }
-   
-   button.btn-projects .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: v.$whiteText;
-   }
-   
-   button.btn-projects .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-   }
-   
-   button.btn-projects .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid v.$whiteText;
-    border-right: 0.125rem solid v.$whiteText;
-    transform: rotate(45deg);
-   }
-   
-   button.btn-projects .button-text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: v.$grayish;
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-   }
-   
-   button:hover .circle {
-    width: 100%;
-   }
-   
-   button:hover .circle .icon.arrow {
-    background: v.$whiteText;
-    transform: translate(1rem, 0);
-   }
-   
-   button:hover .button-text {
-    color: v.$whiteText;
-   }
+
+  .project-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

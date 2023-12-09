@@ -7,6 +7,9 @@
     color: v.$whiteText;
     text-decoration: none;
     position: relative;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 1rem;
 
     span, i {
         position: relative;
@@ -19,11 +22,11 @@
     .ball {
         width: 2em;
         height: 2em;
-        border-radius: 2em;
+        border-radius: .5em;
         background-color: v.$accent-color;
         position: absolute;
         top: 50%;
-        left: -0.5em;
+        left: -.5em;
         transform: translateY(-50%);
     }
 }
