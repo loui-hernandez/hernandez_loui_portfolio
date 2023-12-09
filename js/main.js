@@ -9,7 +9,6 @@ const stopButton = document.querySelector("#stop-button");
 const volumeSlider = document.querySelector("#change-vol");
 const fullScreen = document.querySelector("#full-screen");
 
-
 player.controls = false;
 videoControls.classList.remove('hidden');
 
@@ -53,7 +52,6 @@ function hideControls() {
 function showControls() {
     videoControls.classList.remove('hide');
 }
-
 
 playButton.addEventListener("click", playVideo);
 pauseButton.addEventListener("click", pauseVideo);
@@ -104,22 +102,20 @@ links.forEach(link => {
 
 
 gsap.registerPlugin(ScrollTrigger)
-// load animation for headers
-
 
 // Animation for #profile section on page load
 const profileSection = document.querySelector('#profile');
 const profileElements = profileSection.querySelectorAll('.grid-con > *');
 
 gsap.from(profileElements, {
-    x: '100%', // Start from the right
     opacity: 0,
-    stagger: 0.2, // Adjust the stagger value according to your preference
-    duration: 1, // Animation duration
-    ease: 'power2.out', // Easing function
+    stagger: 0.2, 
+    duration: 2.5, 
+    ease: 'elastic.out(1,0.5)', 
+    x: '100%',
 });
 
-// scroll trigger for text
+// scroll trigger for text in about me section
 const splitTypes = document.querySelectorAll('.text-matrix')
 
 splitTypes.forEach((char,i) => {
