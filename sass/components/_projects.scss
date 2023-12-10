@@ -45,6 +45,11 @@
     border: solid 1px v.$grayish;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
+
+  .projects-temp li p{
+    padding: 1rem;
+    margin: 1rem;
+  }   
   
   .projects-temp h3, .projects-temp img {
     grid-row: 1 / 2;
