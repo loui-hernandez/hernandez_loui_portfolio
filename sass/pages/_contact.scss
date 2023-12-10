@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as v;
+
+#contact-header {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#contact-form {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.contact form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .item {
+    width: 48.5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 1px solid v.$accent-color;
+    outline: none;
+    border-radius: 5px;
+    font-size: v.$font-sm;
+    margin: 12px 0;
+}
+
+.field .item::placeholder {
+    color: v.$grayish;
+}
+
