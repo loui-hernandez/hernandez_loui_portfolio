@@ -41,21 +41,29 @@ footer p {
 }
 
 footer,nav.footer_nav {
-    margin: 3rem 0;
+
 
     .footer_nav ul {
         list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 3rem 0;
     }
 }
 
-.copyright p {
+.copyright {
+    height: 2rem;
     background-color: a.$accent-color;
     color: a.$blackText;
     text-align: center;
-    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+
+.copyright p {
+    color: a.$blackText;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -65,7 +73,7 @@ footer,nav.footer_nav {
         height: 200px;
                 
         footer,nav.footer_nav ul {
-            display: flex;
+            display: inline-block;
             flex-direction: column;
         }
 
@@ -76,15 +84,7 @@ footer,nav.footer_nav {
         }
     }
 
-    
 
-    .copyright p {
-        background-color: a.$accent-color;
-        color: a.$blackText;
-        text-align: center;
-        font-size: 0.8em;
-        margin: 0;
-        padding: 0;
-        bottom: 0;
-    }
+
 }
+
