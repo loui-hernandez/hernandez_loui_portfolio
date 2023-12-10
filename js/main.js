@@ -64,11 +64,11 @@ player.addEventListener('mouseenter', showControls);
 player.addEventListener('mouseleave', hideControls);
 
 // image 3d hover effect gsap
-document.addEventListener("mousemove", function(event) {
+document.addEventListener("mousemove", function(slanting) {
 var width = window.innerWidth,
     height = window.innerHeight,
-    positionX = (event.clientX/width) - 0.6,
-    positionY = (event.clientY/height) - 0.6;
+    positionX = (slanting.clientX/width) - 0.6,
+    positionY = (slanting.clientY/height) - 0.6;
     gsap.to(".image_con img", {
 
         rotationY: positionX * 50,
@@ -166,3 +166,36 @@ gsap.utils.toArray('.animate-projects .project').forEach((project, index) => {
             stagger: 0.3, 
         });
     });
+
+
+window.addEventListener('load', function () {
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener('click', function (scrollTo) {
+
+        scrollTo.preventDefault();
+  
+
+        var aboutMe = this.getAttribute('href').substring(1);
+  
+
+        if (!aboutMe || aboutMe === '') {
+          aboutMe = 'about-me';
+        }
+  
+
+        var targetElement = document.getElementById(aboutMe);
+  
+
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest',
+            duration: 1000,
+          });
+        }
+      });
+    });
+  });
+  

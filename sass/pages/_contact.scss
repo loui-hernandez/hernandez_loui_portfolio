@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as v;
 
 #contact-header {
-    min-height: 70vh;
+    min-height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 #contact-form {
-    min-height: 70vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,10 +34,14 @@ form .input-box {
     width: 48.5%;
 }
 
+.input-box .input-field {
+    width: 48.5%;
+}
+
 .field .item {
     width: 100%;
     padding: 18px;
-    background: transparent;
+    background: white;
     border: 1px solid v.$accent-color;
     outline: none;
     border-radius: 5px;
@@ -47,5 +51,9 @@ form .input-box {
 
 .field .item::placeholder {
     color: v.$grayish;
+}
+
+form .textarea-field .item{
+    resize: none;
 }
 
