@@ -29,10 +29,10 @@
         </label>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="project_detail.php">Projects</a></li>
+            <li><a href="contact.php">Contact Me</a></li>
           </ul>
         </nav>
   </section>
@@ -97,10 +97,10 @@
           </div>
               <nav class="footer_nav">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.php">Home</a></li>
                   <li><a href="#about-me">About Me</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="contact.html">Contact Me</a></li>
+                  <li><a href="project_detail.php">Projects</a></li>
+                  <li><a href="contact.php">Contact Me</a></li>
                 </ul>
               </nav>
         </section>

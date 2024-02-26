@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<?php
+require_once('./connect.php');
+$stmt = $connection->prepare('SELECT * FROM projects ORDER BY title ASC');
+$stmt->execute();
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,10 +36,10 @@
         </label>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="project_detail.php">Projects</a></li>
+            <li><a href="contact.php">Contact Me</a></li>
           </ul>
         </nav>
   </section>
@@ -41,7 +48,7 @@
 <!-- profile intro section -->
   <section class="grid-con" id="profile">
     <div class="col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7" >
-      <iframe class="my_name" src='https://my.spline.design/untitled-c52e9a46574a6075a08d4759287eab29/' frameborder='0' width='100%' height='100%'></iframe>
+      <iframe class="my_name" src="https://my.spline.design/untitled-c52e9a46574a6075a08d4759287eab29/" frameborder="0" width="100%" height="100%"></iframe>
     </div>
     <div class="col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13" id="my-desc">
       <h1 id="headline" >I'm a Designer?</h1>
@@ -71,7 +78,8 @@
         <a href="https://github.com/loui-hernandez"><img src="images/github.svg" alt="Github Icon" class="soc-med-icon"></a>
         <a href="https://www.behance.net/LOUIERICKH5b94"><img src="images/behance.svg" alt="Behance Icon" class="soc-med-icon"></a>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
@@ -80,7 +88,7 @@
   <div class="grid-con">
     <div class="col-span-full m-col-start-2 m-col-end-9 l-col-start-1 l-col-end-9" id="about-me">
       <div >  
-        <h1 id="headline" class="text-matrix" >Get to know me better!</h1>
+        <h1 class="text-matrix">Get to know me better!</h1>
         <p class="text-matrix">So, let me tell you something interesting...</p>
 
         <p class="text-matrix">I have a secret talent for making funny faces. In fact, I've been known to entertain my coworkers with my ridiculous facial expressions during long meetings. But don't worry, I promise to keep it professional during our collaboration.</p>
@@ -88,7 +96,7 @@
         <p class="text-matrix">So, if you're looking for a Graphic Designer who can deliver high-quality designs, meet tight deadlines, and make you laugh, then look no further! </p>
         <p class="text-matrix">Let's work together and create something amazing!</p>
         <div class="text-matrix">
-          <a href="contact.html" class="bttn" target="_blank">
+          <a href="contact.php" class="bttn" target="_blank">
             <div class="ball"></div>
             <span>Contact Me</span>
             <i class="fa solid fa-arrow-right"></i>
@@ -102,6 +110,7 @@
         <img src="images/portrait-leh-blk.png" alt="Loui Hernandez Portrait">
       </div>
     </div>
+  </div>
 </section>
 
 <!-- video reel section -->
@@ -132,13 +141,44 @@
   </div>
 
 <!-- portfolio section -->
+
+
     <section class="grid-con portfolio animate-projects" id="portfolio">
       <div class="col-span-full m-col-start-1 m-col-end-13">
       <article>
         <h1>My Portfolio</h1>
         <p>Here are some of my projects that I've worked on.</p>
       </article>
-      <ul class="projects-temp">
+
+<?php
+
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
+  echo  '<ul class="projects-temp">
+  <li class="project">
+  <a href="project_detail.php?id='.
+        $row['id'].'">
+  <img class="thumbnail" src="images/'.
+        $row['image_url'].'" alt="Project Thumbnail"></a>
+  <h3>'.
+        $row['title'].'</h3>
+  <p>'.
+        $row['description'].'</p>      
+        <div class="project-link">
+        <a href="project_detail.php?id" class="bttn" target="_blank">
+          <div class="ball"></div>
+          <span>Learn More!</span>
+          <i class="fa solid fa-arrow-right"></i>
+        </a>
+      </div></li></ul>';
+
+}
+
+$stmt = null;
+
+?> 
+
+      <!-- <ul class="projects-temp">
         <li class="project">
           <img src="images/ceci branding/ceci-cover.webp" alt="project Ceci">
           <h3>Ceci Cosmetics</h3>
@@ -222,9 +262,11 @@
         </a>
       </div>
         </li>
-      </ul>
+      </ul> -->
       </div>
-    </section>
+    </section><br><br>
+
+
 
     <footer>
       <section class="col-span-full footer-main-nav">
@@ -235,10 +277,10 @@
         </div>
             <nav class="footer_nav">
               <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#about-me">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="project_detail.php">Projects</a></li>
+                <li><a href="contact.php">Contact Me</a></li>
               </ul>
             </nav>
       </section>
