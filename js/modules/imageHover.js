@@ -1,6 +1,4 @@
-// imageHover.js
-import { gsap } from "gsap";
-
+// image 3d hover effect gsap
 document.addEventListener("mousemove", function(slanting) {
     var width = window.innerWidth,
         height = window.innerHeight,
@@ -14,4 +12,4 @@ document.addEventListener("mousemove", function(slanting) {
     
         });
         
-});
+    })

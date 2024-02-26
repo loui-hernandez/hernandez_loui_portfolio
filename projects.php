@@ -19,7 +19,7 @@
   <script type="module" src="js/main.js"></script>
 </head>
 
-<body class="bkg-container">
+<body data-page="projects" class="bkg-container">
 
   <!-- navigation -->
   <header>
