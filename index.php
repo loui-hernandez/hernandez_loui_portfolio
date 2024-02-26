@@ -25,7 +25,7 @@ $stmt->execute();
   <script type="module" src="js/main.js"></script>
 </head>
 
-<body class="bkg-container">
+<body data-page="home" class="bkg-container">
 
   <!-- navigation -->
   <header>

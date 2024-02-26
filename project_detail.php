@@ -3,7 +3,7 @@
 
 <?php
 require_once('connect.php');
-$query = 'SELECT GROUP_CONCAT(image_filename) AS images, description, title FROM projects, media WHERE projects.id = project_id AND projects.id = :projectId';
+$query = 'SELECT GROUP_CONCAT(image_filename) AS images, description, title FROM projects, media WHERE projects.id = media.id AND projects.id = :projectId GROUP BY projects.id';
 $stmt = $connection->prepare($query);
 $projectId = $_GET['id'];
 $stmt->bindParam(':projectId', $projectId, PDO::PARAM_INT);
@@ -31,7 +31,7 @@ $stmt = null;
   <script type="module" src="js/main.js"></script>
 </head>
 
-<body class="bkg-container">
+<body data-page="project_detail" class="bkg-container">
 
   <!-- navigation -->
   <header>
