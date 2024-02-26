@@ -28,7 +28,7 @@ $stmt = null;
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-  <script defer src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </head>
 
 <body class="bkg-container">

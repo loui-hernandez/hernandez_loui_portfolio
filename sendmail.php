@@ -17,43 +17,43 @@ $msg = trim($msg);
 
 
 
-if(empty($name)) {
+if (empty($name)) {
     $errors['name'] = 'First Name cant be empty';
 }
 
-if(empty($msg)) {
+if (empty($msg)) {
     $errors['message'] = 'Comment field cant be empty';
 }
-if(empty($phone)) {
+if (empty($phone)) {
     $errors['phone'] = 'Comment field cant be empty';
 }
 
-if(empty($email)) {
+if (empty($email)) {
     $errors['email'] = 'You must provide an email';
-} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+} else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errors['legit_email'] = 'You must provide a REAL email';
 }
 
-if(empty($errors)) {
+if (empty($errors)) {
 
 
     $query = "INSERT INTO contacts (name, email, message) VALUES('$name','$email', '$phone','$msg')";
 
-    if(mysqli_query($connect, $query)) {
+    if (mysqli_query($connect, $query)) {
 
 
-$to = 'l_hernandez@fanshaweonline.ca';
-$subject = 'Message from your Portfolio site!';
+        $to = 'l_hernandez@fanshaweonline.ca';
+        $subject = 'Message from your Portfolio site!';
 
-$message = "You have received a new contact form submission:\n\n";
-$message .= "Name: ".$name."\n";
-$message .= "Email: ".$email."\n\n";
+        $message = "You have received a new contact form submission:\n\n";
+        $message .= "Name: " . $name . "\n";
+        $message .= "Email: " . $email . "\n\n";
 
-mail($to,$subject,$message);
+        mail($to, $subject, $message);
 
-header('Location: thank_you.php');
+        header('Location: thank_you.php');
 
-}
+    }
 
 
 
