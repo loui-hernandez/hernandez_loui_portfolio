@@ -86,7 +86,7 @@ $stmt = null;
       </div>
 
       <div class="col-span-full" id="">
-        <div id="ceci-logo">
+        <!-- <div id="ceci-logo">
           <img src="images/ceci branding/ceci-logo.svg" alt="Ceci Cosmetics Logo">
         </div>
         <div class="img-con-proj">
@@ -99,7 +99,7 @@ $stmt = null;
       </div>
       <div class="col-span-full">
         <img src="images/ceci branding/ceci-Product 01.webp" alt="">
-      </div>
+      </div> -->
     </section>
 
     <br>
@@ -139,9 +139,7 @@ $stmt = null;
 
     <?php
     for ($i = 0; $i < count($images); $i++) {
-
       echo '<img class="portfolio-image" src="images/' . $images[$i] . '" alt="Project Image">';
-
     }
     ?>
 
