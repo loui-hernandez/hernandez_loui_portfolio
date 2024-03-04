@@ -38,8 +38,8 @@ $stmt->execute();
       <nav>
         <ul>
           <li><a href="index.php">Home</a></li>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="project_detail.php">Projects</a></li>
+          <li><a href="index.php#about-me">About Me</a></li>
+          <li><a href="projects.php">Projects</a></li>
           <li><a href="contact.php">Contact Me</a></li>
         </ul>
       </nav>
@@ -292,7 +292,7 @@ $stmt->execute();
         <nav class="footer_nav">
           <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
+            <li><a href="index.php#about-me">About Me</a></li>
             <li><a href="project_detail.php">Projects</a></li>
             <li><a href="contact.php">Contact Me</a></li>
           </ul>
