@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 04, 2024 at 03:03 AM
+-- Generation Time: Mar 04, 2024 at 04:41 AM
 -- Server version: 5.7.39
 -- PHP Version: 7.4.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `portfolio_db`
+-- Database: `portfolio`
 --
 
 -- --------------------------------------------------------
@@ -56,21 +56,21 @@ INSERT INTO `media` (`id`, `project_id`, `image_filename`) VALUES
 (1, 1, 'image1a.webp'),
 (2, 1, 'image1b.webp'),
 (3, 1, 'image1c.webp'),
-(4, 2, 'image2a.png'),
-(5, 2, 'image2b.png'),
-(6, 2, 'image2c.png'),
-(7, 3, 'image3a.png'),
-(8, 3, 'image3b.png'),
-(9, 3, 'image3c.png'),
-(10, 1, 'image1a.png'),
-(11, 1, 'image1b.png'),
-(12, 1, 'image1c.png'),
-(13, 2, 'image1a.png'),
-(14, 2, 'image1b.png'),
-(15, 2, 'image1c.png'),
-(16, 3, 'image3a.png'),
-(17, 3, 'image3b.png'),
-(18, 3, 'image3c.png');
+(4, 1, 'image1d.webp'),
+(5, 1, 'image1e.webp'),
+(6, 1, 'image1f.webp'),
+(7, 1, 'image1g.webp'),
+(8, 1, 'image1h.webp'),
+(9, 1, 'image1i.webp'),
+(10, 1, 'image1a.webp'),
+(11, 1, 'image1b.webp'),
+(12, 1, 'image1c.webp'),
+(13, 2, 'image1a.webp'),
+(14, 2, 'image1b.webp'),
+(15, 2, 'image1c.webp'),
+(16, 3, 'image3a.webp'),
+(17, 3, 'image3b.webp'),
+(18, 3, 'image3c.webp');
 
 -- --------------------------------------------------------
 
@@ -93,7 +93,6 @@ INSERT INTO `projects` (`id`, `title`, `description`, `image_url`) VALUES
 (1, 'Ceci Cosmetics', 'Born from creativity and sophistication, CeCi Cosmetics is a celebration of elegance and joy. The animated logo dances, inviting discovery. The skincare collection tells a story of care and empowerment. In each detail, CeCi paints a picture of timeless beauty and confidence. Explore our website and discover the essence of CeCi Cosmetics.', 'project1_thumb.webp'),
 (2, 'Beans Pro Earbuds', 'Discover the essence of Beans Pro Earbuds – a harmonious blend of innovation and design. Our brand identity, from the sleek logo to the vibrant color palette, embodies cutting-edge technology. The website, a digital symphony of user-centric design, provides an immersive experience, showcasing the product seamlessly. Collaboration with the Beans Pro team ensured every step resonated with their vision. Explore our website and dive into a world where style meets superior sound. Beans Pro – Elevate your audio experience.', 'project2_thumb.webp'),
 (3, 'Billy Beer Rebrand', 'Crafting Billy Beer and its website was a journey inspired by a passion for exceptional brewing. From selecting the finest ingredients to designing a website that reflects our commitment to quality, our goal is to offer a unique and memorable experience. Explore the story behind every bottle and navigate our user-friendly site to discover the essence of Billy Beer.', 'project3_thumb.webp'),
-(4, 'Comfort Room Branding', 'Comfort Room Branding emerged from a vision to simplify and enhance room climate control through a smart app. The project focused on developing an intuitive interface for users to easily manage room temperature and fan functions. By leveraging cutting-edge technology and emphasizing energy efficiency, the app provides a seamless and connected experience, allowing users to personalize their comfort while promoting sustainability.', 'project4_thumb.webp'),
 (5, 'Burton Live Events', 'Burton Live Events\' branding was crafted to embody the spirit of dynamic and unforgettable live experiences. The process involved selecting vibrant colors, bold typography, and a versatile logo to capture the energy of events. Consistency across digital and print materials ensures a cohesive and memorable brand presence. ', 'project5_thumb.webp'),
 (6, 'Strong Media Corp', 'Strong Media Corp\'s branding exudes strength and innovation. The design process focused on a robust color palette and dynamic visuals, complemented by impactful typography. The logo symbolizes strength, and consistency across digital and print materials ensures a unified and memorable brand presence.', 'project6_thumb.webp');
 
