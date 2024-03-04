@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-require_once('connect.php');
+require_once('includes/connect.php');
 $query = 'SELECT GROUP_CONCAT(image_filename) AS images, description, title FROM projects, media WHERE projects.id = media.id AND projects.id = :projectId GROUP BY projects.id';
 $stmt = $connection->prepare($query);
 $projectId = $_GET['id'];
